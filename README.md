@@ -13,4 +13,4 @@ Un equipo de cinco desarrolladores que mediante la metodología ágil SCRUM se l
 
 - Soy Johana Tafur, soy financista, de Bogotá y actualmente trabajo como analista financiera, estoy aprendiendo por primera vez a programar en Mintic-2021 y estoy muy motivada en seguir este emocionante mundo de la programación.En esta semana trabaje como Administradora BD.
 
-- Soy Wilson Ortega, con conocimientos básicos en programación adquiridos en la formación académica tanto universitaria como en los dos primero ciclos de programación de MisionTIC. Junto con este ciclo 3 busco complementarlos con temas del desarrollo web. Empiezo con el rol de Desarrollador dentro del grupo de trabajo.
+- Soy Wilson Ortega, con conocimientos básicos en programación adquiridos en la formación académica tanto universitaria como en los dos primeros ciclos de programación de MisionTIC. Junto con este ciclo 3 busco complementarlos con temas del desarrollo web. Empiezo con el rol de Desarrollador dentro del grupo de trabajo.
