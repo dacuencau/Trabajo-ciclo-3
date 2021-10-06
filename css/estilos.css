@@ -10,16 +10,25 @@ body{
 }
 
 #contenedor{
+    display: flex;
+    justify-content: center;
     background: #afacac;
     width: 360px;
     height: 360px;
     position: absolute;
-    top: 160px;
-    right: 150px;
+    /*top: 160px;*/
+    /*right: 150px;*/
+    top: 25%;
+    right: 30%;
+    left: 40%;
     border-radius: 10px;
     padding-top: 60px;
     text-align: center;
     font-size: 20px;
+    
+}
+#contenedor a {
+    text-decoration: none;
 }
 
 #boton{
