@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/registro.css">
 </head>
 <body>
     <header id="header-principal">
@@ -22,6 +23,38 @@
             </ul>
         </nav>
     </header>
+    <form action="/my-handling-form-page" method="post">
+        <ul>
+            <li>
+                <label for="name_prod">Producto:</label>
+                <input type="text" id="name_prod" name="user_name_prod">
+            </li>
+            <li>
+                <label for="Valor">Valor:</label>
+                <input type="number" id="Valor" name="user_valor">
+            </li>
+            <li>
+                <label for="name_cliente">Nombre cliente:</label>
+                <input type="email" id="mail" name="user_name_cliente">
+            </li>
+            <li>
+                <label for="idced">Cedula Cliente</label>
+                <input type="number" id="idced" name="user_idced">
+            </li>
+            <li>
+                <label for="idfecha">Fecha:</label>
+                <input type="number" id="idfecha" name="user_idfecha">
+            </li>
+            <li>
+                <label for="ced">Cedula Vendedor:</label>
+                <input type="number" id="ced" name="user_ced"></textarea>
+            </li>
+            <li class="button">
+                <button type="submit">Registrar Venta</button>
+            </li>
+        </ul>
+        
+    </form>
 
     <div class="sidebar-menu-vertical">
         <ul>
@@ -54,6 +87,6 @@
             </li>
         </ul>
     </div>
-    
+
 </body>
 </html>
