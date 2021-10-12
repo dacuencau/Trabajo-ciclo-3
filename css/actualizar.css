@@ -1,0 +1,60 @@
+form {
+    /* Centrar el formulario en la página */
+    margin: 0 auto;
+    width: 350px;
+  
+
+    /*display: flex;
+    align-items: center;*/
+    /* Esquema del formulario */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    position: relative;
+    
+    top: 160px;
+    /*right: 150;*/
+
+    box-shadow: 3px 5px lightslategray;
+  }
+ form a{
+    text-decoration: none;
+  }
+  form h3{
+    align-content: center;
+  }
+  input{
+    /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+       Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+    font: 1 em sans-serif;
+  
+    /* Tamaño uniforme del campo de texto */
+    width: 300px;
+    height: 25px;
+    box-sizing: border-box;
+    margin: 5px;
+  
+    /* Hacer coincidir los bordes del campo del formulario */
+    border: 1px solid #999;
+
+    /*Redondear un poco los bordes del input*/
+    border-radius: 3px;
+
+    box-shadow: -1px 1px lightslategray;
+    
+  }
+  input:hover{
+    background-color: rgb(220, 224, 228);
+
+    color:rgb(63, 65, 68)
+  }  
+  input:focus
+  /*textarea:focus*/ {
+    /* Destacado adicional para elementos que tienen el cursor */
+    border-color: #000;
+  }
+  button{
+    width: 30%;
+    margin-left: 35%;
+    font-size: 1em;
+  }
