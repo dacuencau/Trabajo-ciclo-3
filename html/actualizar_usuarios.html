@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Registro</title>
+    <title>Actualizar Usuarios</title>
     <!-- Estilos de pagina-->
-    <link rel="stylesheet" href="../css/registro_usuarios.css">
+    <link rel="stylesheet" href="../css/actualizar_usuarios.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
@@ -16,16 +16,15 @@
     </header>
 
     <form action="/my-handling-form-page" method="post">
+        <div><input type="number" id="idcard" name="user_idcard" placeholder="Documento de identificación"></div><br>
         <div><input type="text" id="name" name="user_name" placeholder="Nombre"></div><br>
         <div><input type="text" id="lastname" name="user_lastname" placeholder="Apellidos"></div><br>
-        <div><input type="email" id="mail" name="user_mail" placeholder="Email"></div><br>
-        <div><input type="number" id="idcard" name="user_idcard" placeholder="Documento de identificación"></div><br>
+        <div><input type="email" id="mail" name="user_mail" placeholder="Email"></div><br>        
         <div><input type="tel" id="cel" name="user_cel" placeholder="Teléfono"></div><br>
         <div><input type="text" id="dep" name="user_dep" placeholder="Departamento"></div><br>
         <div><input type="text" id="rol" name="user_rol" placeholder="Rol: Ventas, Admin..."></div><br>
-        <div><Input type="submit" value="Registrarse"><br></div><br>
-        <p>Si estás registrado, inicia sesión <a href="">Aquí.</a></p>
+        <div><Input type="submit" value="Actualizar"><br></div><br>
+    
     </form>
-
 </body>
 </html>
