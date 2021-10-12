@@ -17,14 +17,12 @@ form {
 
     box-shadow: 3px 5px lightslategray;
   }
-
-
-
  form a{
     text-decoration: none;
   }
-
-
+  form h3{
+    align-content: center;
+  }
   input{
     /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
        Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
@@ -45,15 +43,18 @@ form {
     box-shadow: -1px 1px lightslategray;
     
   }
-
   input:hover{
     background-color: rgb(220, 224, 228);
 
     color:rgb(63, 65, 68)
-  }
-  
+  }  
   input:focus
   /*textarea:focus*/ {
     /* Destacado adicional para elementos que tienen el cursor */
     border-color: #000;
+  }
+  button{
+    width: 30%;
+    margin-left: 35%;
+    font-size: 1em;
   }
