@@ -18,3 +18,4 @@ Un equipo de cinco desarrolladores que mediante la metodología ágil SCRUM se l
 
 - Soy Wilson Ortega, con conocimientos básicos en programación adquiridos en la formación académica tanto universitaria como en los dos primeros ciclos de programación de MisionTIC. Junto con este ciclo 3 busco complementarlos con temas del desarrollo web. Empiezo con el rol de Desarrollador dentro del grupo de trabajo.
 
+- Soy Santiago Molina, estudiante de estadística. Tengo conocimientos básicos en lenguajes estadísticos y ahora con la aventura de Misión TIC he comenzado a acercarme al mundo del desarrolle web. Siempre dispuesto asumir nuevos retos.
