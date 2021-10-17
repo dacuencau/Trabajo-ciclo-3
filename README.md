@@ -1,20 +1,95 @@
 # MisionTIC - Ciclo 3
-## Grupo G11
-## Descripcion 
+## Grupo 11
+### Descripción 
 Aplicación web con la que se administra y controla las ventas físicas y virtuales de libros, donde se puede realizar seguimiento a cada uno de los pedidos tanto en locales físicos como hechos desde la página, recopilando  información sobre: 
 
-- Establecimiento, 
+- Establecimiento 
 - Fecha 
+- Datos de Cliente
+- Datos de Vendedor
+- Seguimiento del producto
 
 
-## Integrantes
+### Integrantes
 Un equipo de cinco desarrolladores que mediante la metodología ágil SCRUM se llevará a cabo la gestión del desarrollo de la página web.
 
 - Soy Diego Cuenca, soy economista, es mi primera vez programando y Mintic-2021 ha sido una ventana de aprendizaje muy grande, en esta semana trabaje  con el rol de Scrum Master.
 
 - Soy Johana Tafur, soy financista, de Bogotá y actualmente trabajo como analista financiera, estoy aprendiendo por primera vez a programar en Mintic-2021 y estoy muy motivada en seguir este emocionante mundo de la programación.En esta semana trabaje como Administradora BD.
 
--Soy Julián Ruiz, estudiante de Ingeniería de Sistemas, para mi es un placer y una gran aventura el estar participando de este proceso de formación en programación; y es interesante el saber todo lo que se puede lograr por medio de esta excelente disciplina. Para esta semana trabajaré con el rol de desarrollador.
+- Soy Julián Ruiz, estudiante de Ingeniería de Sistemas, para mi es un placer y una gran aventura el estar participando de este proceso de formación en programación; y es interesante el saber todo lo que se puede lograr por medio de esta excelente disciplina. Para esta semana trabajaré con el rol de desarrollador.
 
 - Soy Wilson Ortega, con conocimientos básicos en programación adquiridos en la formación académica tanto universitaria como en los dos primeros ciclos de programación de MisionTIC. Junto con este ciclo 3 busco complementarlos con temas del desarrollo web. Empiezo con el rol de Desarrollador dentro del grupo de trabajo.
 
+
+
+# Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
