@@ -14,10 +14,11 @@ const ObjectId = require("mongodb").ObjectId;
 
 // This section will help you get a list of all the records.
 recordRoutes.route("/record").get(function (req, res) {
-  let db_connect = dbo.getDb("employees");
+  let db_connect = dbo.getDb("db-misiontic");
+  
   db_connect
-    .collection("records")
-    .find({})
+    .collection("productos")
+    .find({}).limit(10)		// Limite de resultados
     .toArray(function (err, result) {
       if (err) throw err;
       res.json(result);

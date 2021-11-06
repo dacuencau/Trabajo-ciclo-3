@@ -2,7 +2,7 @@
 import React from 'react';
 import './App.css';
 
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Login from './components/Login';
 import Admin from './components/Admin';
 
@@ -11,8 +11,11 @@ function App(){
     <BrowserRouter>
       <div className="App">
         <Switch>
-          <Route exact path="/" component={Login}/>
-          <Route exact path="/administrador" component={Admin}/>
+          <Route exact path={["/"]} component={Login}/>
+          <Route exact path={["/administrador",
+          "/adm-ventas-reg","/adm-ventas-inf",
+          "/adm-producto-reg","/adm-producto-inf",
+          "/adm-usuario-reg","/adm-usuario-inf"]} component={Admin}/>
         </Switch>
       </div>
     </BrowserRouter>
