@@ -10,15 +10,22 @@ export default function TablaUsuario(props) {
         <form>
           <label>Nombre <input type="text"/></label>
           <label>Apellido <input type="text"/></label>
-          <label>Cantidad  <input type="number"/></label>
           <label>Doc. identificacion   <input type="number"/></label>
-          <label>Estado 
+          <label>Estado
             <select name="select">
-              <option value="value1" selected>usuario</option>
-              <option value="value2">vendedor</option>
-              <option value="value3">administrador</option>
+              <option value="estado1" selected>Pendiente</option>
+              <option value="estado2">Autorizado</option>
+              <option value="estado3">No-autorizado</option>
             </select>
           </label>
+          <label>Rol 
+            <select name="select">
+              <option value="rol1" selected>Usuario</option>
+              <option value="rol2">Vendedor</option>
+              <option value="rol3">Administrador</option>
+            </select>
+          </label>
+          <button>Enviar Datos</button>
         </form>
    	  </div>
     )

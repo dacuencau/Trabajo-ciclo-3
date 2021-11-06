@@ -9,14 +9,22 @@ export default function TablaVenta(props) {
   	  <div>
         <form>
           <label>Id. Venta <input type="text"/></label>
-          <label>Estado <input type="text"/></label>
           <label>Cantidad  <input type="number"/></label>
           <label>Precio Unidad  <input type="number"/></label>
           <label>Precio Total   <input type="number"/></label>
-          <label>Fecha   <input type="date"/></label>
           <label>Nombre cliente   <input type="text"/></label>
           <label>Doc. identificacion   <input type="number"/></label>
           <label>Vendedor <input type="text"/></label>
+          <label>Fecha   <input type="date"/></label>
+          <label>Estado 
+            <select name="select">
+              <option value="estado1" selected>Sin-estado</option>
+              <option value="estado2">En-proceso</option>
+              <option value="estado3">Cancelado</option>
+              <option value="estado3">Entregado</option>
+            </select>
+          </label>
+          <button>Enviar Datos</button>
         </form>
    	  </div>
     )
