@@ -1,0 +1,18 @@
+form {
+  position: relative;
+
+  width  : 740px;
+  height : 498px;
+  margin : 0 auto;
+
+  background: #FFF;
+}
+
+label {
+    /* Tamaño y alineación uniforme */
+    display: inline-block;
+    width: 220px;
+    text-align: left;
+    margin: 5px;
+}
+

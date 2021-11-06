@@ -1,36 +1,36 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import '../css/sidebar.css';
+import TablaVenta from './TablaVenta';
+import TablaProd from './TablaProd';
+import TablaUsuario from './TablaUsuario';
 
 function Sidebar(){
   return(
     <BrowserRouter>
       <div className="Sidebar-menu-vertical">
         <ul>
-          <li><a href="#">Administrador de Ventas</a>
+          <li><h3> Administrador de Ventas</h3>
             <div className="Sidebar-submenu-vertical">
               <ul>
                 <li><Link to="/adm-ventas-reg">Registro</Link></li>
                 <li><Link to="/adm-ventas-inf">Información</Link></li>
-                <li><Link to="/adm-ventas-act">Actualización</Link></li>
               </ul>
             </div> 
           </li>
-          <li><a href="#">Administrador de Productos</a>
+          <li><h3>Administrador de Productos</h3>
             <div className="Sidebar-submenu-vertical">
               <ul>
                 <li><Link to="/adm-producto-reg">Registro</Link></li>
                 <li><Link to="/adm-producto-inf">Información</Link></li>
-                <li><Link to="/adm-producto-act">Actualización</Link></li>
               </ul>
             </div> 
           </li>
-          <li><a href="#">Gestión de Usuarios</a>
+          <li><h3>Gestión de Usuarios</h3>
             <div className="Sidebar-submenu-vertical">
               <ul>
                 <li><Link to="/adm-usuario-reg">Registro</Link></li>
                 <li><Link to="/adm-usuario-inf">Información</Link></li>
-                <li><Link to="/adm-usuario-act">Actualización</Link></li>
               </ul>
             </div>
           </li>
@@ -38,32 +38,23 @@ function Sidebar(){
       </div>
       <div className="Contenido">  
         <Switch>
-          <Route path="/adm-ventas-reg">
-            <AdminVentasReg />
+          <Route path="/adm-ventas-reg" exact>
+            <AdminVentas admventas="registro"/>
           </Route>
-          <Route path="/adm-ventas-inf">
-            <AdminVentasInf />
+          <Route path="/adm-ventas-inf" exact>
+            <AdminVentas admventas="informacion"/>
           </Route>
-          <Route path="/adm-ventas-act">
-            <AdminVentasAct />
+          <Route path="/adm-producto-reg" exact>
+            <AdminProducto admproducto="registro"/>
           </Route>
-          <Route path="/adm-producto-reg">
-            <AdminProductoReg />
+          <Route path="/adm-producto-inf" exact>
+            <AdminProducto admproducto="informacion"/>
           </Route>
-          <Route path="/adm-producto-inf">
-            <AdminProductoInf />
+          <Route path="/adm-usuario-reg" exact>
+            <AdminUsuario admusuario="registro"/>
           </Route>
-          <Route path="/adm-producto-act">
-            <AdminProductoAct />
-          </Route>
-          <Route path="/adm-usuario-reg">
-            <AdminUsuarioReg />
-          </Route>
-          <Route path="/adm-usuario-inf">
-            <AdminUsuarioInf />
-          </Route>
-          <Route path="/adm-usuario-act">
-            <AdminUsuarioAct />
+          <Route path="/adm-usuario-inf" exact>
+            <AdminUsuario admusuario="informacion"/>
           </Route>
         </Switch>
       </div>
@@ -71,85 +62,67 @@ function Sidebar(){
   )
 }
 
-function AdminVentasReg() {
-  return (
-  <div>
-    <h3>Administrador de Ventas</h3>
-    <p>Registro de nueva venta</p>
-  </div>
-  )
+function AdminVentas(props) {
+  const accion = props.admventas
+  if(accion==="registro"){
+    return (
+      <div>
+        <h3>Administrador de Ventas</h3>
+        <p>Registro de nueva venta</p>
+        <TablaVenta visual={accion}/>
+      </div>
+    )
+  }else if(accion==="informacion"){
+    return(
+      <div>
+        <h3>Administrador de Ventas</h3>
+        <p>Informacion de ventas</p>
+        <TablaVenta visual={accion}/>
+      </div>
+    )
+  }
 }
 
-function AdminVentasInf() {
-  return (
-  <div>
-    <h3>Administrador de Ventas</h3>
-    <p>Informacion de ventas</p>
-  </div>
-  )
+function AdminProducto(props) {
+  const accion = props.admproducto
+  if(accion==="registro"){
+    return (
+    <div>
+      <h3>Administrador de Productos</h3>
+      <p>Registro de nuevo Producto</p>
+      <TablaProd visual={accion}/>
+    </div>
+    )
+  }else if(accion==="informacion"){
+    return(
+    <div>
+      <h3>Administrador de Productos</h3>
+      <p>Informacion de Productos</p>
+      <TablaProd visual={accion}/>
+    </div>
+    )
+  }
 }
 
-function AdminVentasAct() {
-  return (
-  <div>
-    <h3>Administrador de Ventas</h3>
-    <p>Actualizacion de estado de venta</p>
-  </div>
-  )
-}
-
-function AdminProductoReg() {
-  return (
-  <div>
-    <h3>Administrador de Productos</h3>
-    <p>Registro de nuevo Producto</p>
-  </div>
-  )
-}
-
-function AdminProductoInf() {
-  return (
-  <div>
-    <h3>Administrador de Productos</h3>
-    <p>Informacion de Productos</p>
-  </div>
-  )
-}
-
-function AdminProductoAct() {
-  return (
-  <div>
-    <h3>Administrador de Productos</h3>
-    <p>Actualizacion de informacion de Productos</p>
-  </div>
-  )
-}
-
-function AdminUsuarioReg() {
-  return (
-  <div>
-    <h3>Gestion de Usuarios</h3>
-    <p>Registro de nuevo usuario: Rol de usuario</p>
-  </div>
-  )
-}
-
-function AdminUsuarioInf() {
-  return (
-  <div>
-    <h3>Gestion de Usuarios</h3>
-    <p>Informacion de usuario</p>
-  </div>
-  )
-}
-
-function AdminUsuarioAct() {
-  return (
-  <div>
-    <h3>Gestion de Usuarios</h3>
-    <p>Actualizacion de informacion de usuario</p>
-  </div>
-  )
+function AdminUsuario(props) {
+  const accion = props.admusuario
+  if(accion==="registro"){
+    return (
+      <div>
+        <h3>Gestion de Usuarios</h3>
+        <p>Registro de nuevo usuario: Rol de usuario</p>
+        <TablaUsuario visual={accion}/>
+      </div>
+    )
+  }else if(accion==="informacion"){
+    return(
+      <div>
+        <h3>Gestion de Usuarios</h3>
+        <p>Informacion de usuario</p>
+        <TablaUsuario visual={accion}/>
+      </div>
+    )
+  }
 }
 
 export default Sidebar
