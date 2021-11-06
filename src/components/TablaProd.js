@@ -11,7 +11,14 @@ export default function TablaProd(props) {
           <label>Id. Producto <input type="text"/></label>
           <label>Descripcion <input type="text"/></label>
           <label>Precio Unidad  <input type="number"/></label>
-          <label>Estado   <input type="text"/></label>
+          <label>Estado
+            <select name="select">
+              <option value="estado1" selected>Sin-estado</option>
+              <option value="estado2">Disponible</option>
+              <option value="estado3">No-disponible</option>
+            </select>
+          </label>
+          <button>Enviar Datos</button>
         </form>
    	  </div>
     )
