@@ -5,9 +5,12 @@ const Login = ()=>(
   <section className="Home">
     <h3>Hello Login </h3>
     <p>Verificacion de nuevo enlace: 
+      <br/>
     	<Link to="/administrador">Admin</Link>
+      <br/> 
+     <Link to="/vendedor">Vend</Link>
     </p><br/>
-    <p>Registro mediante Google - OAuth2</p>
+    <p>Registro mediante Google - OAuth2</p> 
   </section>
 )
 
