@@ -18,6 +18,9 @@ const Login = ()=>{
     <p>Verificacion de nuevo enlace: 
     	<Link to="/administrador">Admin</Link>
     </p><br/>
+    <p>Verificacion de nuevo enlace: 
+    	<Link to="/usuario">Usuario</Link>
+    </p><br/>
     <p>Registro mediante Google - OAuth2</p>
     { isAuthenticated ? <LogoutButton/> : <LoginButton/> }
     <Profile/>

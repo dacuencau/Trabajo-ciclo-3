@@ -1,8 +1,59 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
+
+/*
+const Record = (props) => (
+  <tr>
+    <td>{props.record.person_name}</td>
+    <td>{props.record.person_position}</td>
+    <td>{props.record.person_level}</td>
+    <td>
+      <Link to={"/edit/" + props.record._id}>Edit</Link> |
+      <a
+        href="/"
+        onClick={() => {
+          props.deleteRecord(props.record._id);
+        }}
+      >
+        Delete
+      </a>
+    </td>
+  </tr>
+);
 
 
+const recordList = (currentrecord) => {
+      return (
+        <Record
+          record={currentrecord}
+          deleteRecord={this.deleteRecord}
+          key={currentrecord._id}
+        />
+      );
+    }
+*/
 //export default class TablaVenta extends Component {
 export default function TablaUsuario(props) {
+/*
+  const Record = (props) => (
+    <tr>
+      <td>{props.record.person_name}</td>
+      <td>{props.record.person_position}</td>
+      <td>{props.record.person_level}</td>
+      <td>
+        <Link to={"/edit/" + props.record._id}>Edit</Link> |
+        <a
+          href="/"
+          onClick={() => {
+            props.deleteRecord(props.record._id);
+          }}
+        >
+          Delete
+        </a>
+      </td>
+    </tr>
+  );
+*/
   const accion = props.visual
   if(accion==="registro"){
     return(
@@ -42,7 +93,9 @@ export default function TablaUsuario(props) {
               <th>Action</th>
             </tr>
           </thead>
-          {/*<tbody>{this.recordList()}</tbody>*/}
+          <tbody>
+                 
+          </tbody>
         </table>
       </div>
     );

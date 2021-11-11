@@ -1,12 +1,12 @@
 import React from 'react';
 import Header from './Header';
-import Sidebar from './Sidebar';
+import SidebarU from './SidebarU';
 
-const Admin = ()=>(
-  <section className="admin">
+const Usuario = ()=>(
+  <section className="usuario">
     <Header/>
-    <Sidebar/>
+    <SidebarU />
   </section>
 )
 
-export default Admin
+export default Usuario
