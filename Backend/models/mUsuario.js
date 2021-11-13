@@ -2,12 +2,12 @@ const mongoose = require("mongoose");
 var uniqueValidator = require("mongoose-unique-validator");
 
 const usuario = mongoose.Schema({
-  Documento: { type: Number, required: true, unique: true },
-  NombreApellido: { type: String, required: true },
-  Telefono: { type: Number },
-  Correo: { type: String, required: true },
-  Sucursal: { type: String, required: true },
-  Rol: { type: String, required: true },
+  documento: { type: Number, required: true, unique: true },
+  nombreApellido: { type: String, required: true },
+  telefono: { type: Number },
+  correo: { type: String, required: true },
+  sucursal: { type: String, required: true },
+  rol: { type: String, required: true },
 });
 
 usuario.plugin(uniqueValidator);

@@ -199,7 +199,7 @@ export default class TablaProd extends Component {
   }else if(accion==="informacion"){
     return (
       <div>
-        <h3>Record List</h3>
+        <h3>Lista de Productos</h3>
         <table className="table table-striped" style={{ marginTop: 20 }}>
           <thead>
             <tr>
@@ -221,7 +221,7 @@ export default class TablaProd extends Component {
 
 
 
-{/*
+/*
 const Record = (props) => (
   <tr>
     <td>{props.record.person_name}</td>
@@ -306,4 +306,4 @@ export default class RecordList extends Component {
   }
 }
 
-*/}
+*/
