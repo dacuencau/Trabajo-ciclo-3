@@ -13,16 +13,16 @@ function SidebarV(){
           <li><h3> Administrador de Ventas</h3>
             <div className="Sidebar-submenu-vertical">
               <ul>
-                <li><Link to="/adm-ventas-reg">Registro</Link></li>
-                <li><Link to="/adm-ventas-inf">Información</Link></li>
+                <li><Link to="/vnt-ventas-reg">Registro</Link></li>
+                <li><Link to="/vnt-ventas-inf">Información</Link></li>
               </ul>
             </div> 
           </li>
           <li><h3>Administrador de Productos</h3>
             <div className="Sidebar-submenu-vertical">
               <ul>
-                <li><Link to="/adm-producto-reg">Registro</Link></li>
-                <li><Link to="/adm-producto-inf">Información</Link></li>
+                <li><Link to="/vnt-producto-reg">Registro</Link></li>
+                <li><Link to="/vnt-producto-inf">Información</Link></li>
               </ul>
             </div> 
           </li>
@@ -30,16 +30,16 @@ function SidebarV(){
       </div>
       <div className="Contenido">  
         <Switch>
-          <Route path="/adm-ventas-reg" exact>
+          <Route path="/vnt-ventas-reg" exact>
             <AdminVentas admventas="registro"/>
           </Route>
-          <Route path="/adm-ventas-inf" exact>
+          <Route path="/vnt-ventas-inf" exact>
             <AdminVentas admventas="informacion"/>
           </Route>
-          <Route path="/adm-producto-reg" exact>
+          <Route path="/vnt-producto-reg" exact>
             <AdminProducto admproducto="registro"/>
           </Route>
-          <Route path="/adm-producto-inf" exact>
+          <Route path="/vnt-producto-inf" exact>
             <AdminProducto admproducto="informacion"/>
           </Route>
         </Switch>

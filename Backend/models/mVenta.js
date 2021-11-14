@@ -2,14 +2,15 @@ const mongoose = require("mongoose");
 var uniqueValidator = require("mongoose-unique-validator");
 
 const venta = mongoose.Schema({
-  Fecha_Venta: { type: String, required: true },
-  Producto: { type: String, unique: true },
-  Referencia: { type: Number, required: true },
-  Precio: { type: Number, required: true },
-  Descripcion: { type: String },
-  Sucursal: { type: String, required: true },
-  Vendedor: { type: String, required: true },
-  Categoria: { type: String, required: true },
+  producto: { type: String, unique: true },
+  cantidad: { type: Number, required: true },
+  precio: { type: Number, required: true },
+  precio_total: { type: Number, required: true },
+  nombre_cliente: { type: String },
+  identificacion: { type: Number, required: true },
+  vendedor: { type: String, required: true },
+  fecha: { type: String, required: true },
+  estado: { type: String, required: true },
 });
 
 venta.plugin(uniqueValidator);

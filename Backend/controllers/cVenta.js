@@ -8,14 +8,15 @@ exports.getVentas = (req, res) => {
 
 exports.addVentas = (req, res) => {
   const ventasAdd = new Ventas({
-    Fecha_Venta: req.body.Fecha_Venta,
-    Producto: req.body.Producto,
-    Referencia: req.body.Referencia,
-    Precio: req.body.Precio,
-    Descripcion: req.body.Descripcion,
-    Sucursal: req.body.Sucursal,
-    Vendedor: req.body.Vendedor,
-    Categoria: req.body.Categoria,
+    producto: req.body.producto,
+    cantidad: req.body.cantidad,
+    precio: req.body.precio,
+    precio_total: req.body.precio_total,
+    nombre_cliente: req.body.nombre_cliente,
+    identificacion: req.body.identificacion,
+    vendedor: req.body.vendedor,
+    fecha: req.body.fecha,
+    estado: req.body.estado,
   });
 
   ventasAdd.save().then((createdVenta) => {

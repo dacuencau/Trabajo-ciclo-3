@@ -29,7 +29,7 @@ function Sidebar(){
           <li><h3>Gestión de Usuarios</h3>
             <div className="Sidebar-submenu-vertical">
               <ul>
-                <li><Link to="/adm-usuario-reg">Registro</Link></li>
+                {/*<li><Link to="/adm-usuario-reg">Registro</Link></li> */}
                 <li><Link to="/adm-usuario-inf">Información</Link></li>
               </ul>
             </div>
@@ -50,9 +50,11 @@ function Sidebar(){
           <Route path="/adm-producto-inf" exact>
             <AdminProducto admproducto="informacion"/>
           </Route>
+          {/*
           <Route path="/adm-usuario-reg" exact>
             <AdminUsuario admusuario="registro"/>
           </Route>
+          */}
           <Route path="/adm-usuario-inf" exact>
             <AdminUsuario admusuario="informacion"/>
           </Route>
@@ -106,6 +108,7 @@ function AdminProducto(props) {
 
 function AdminUsuario(props) {
   const accion = props.admusuario
+  {/*
   if(accion==="registro"){
     return (
       <div>
@@ -114,7 +117,9 @@ function AdminUsuario(props) {
         <TablaUsuario visual={accion}/>
       </div>
     )
-  }else if(accion==="informacion"){
+  }else 
+  */}
+  if(accion==="informacion"){
     return(
       <div>
         <h3>Gestion de Usuarios</h3>

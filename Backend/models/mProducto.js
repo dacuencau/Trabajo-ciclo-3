@@ -7,7 +7,7 @@ const producto = mongoose.Schema({
   price: { type: Number, required: true },
   url: { type: String, required: true },
   categoria: { type: String, required: true },
-  disponible: { type: Boolean, required: true },
+  disponible: { type: String, required: true },
 });
 
 producto.plugin(uniqueValidator);
