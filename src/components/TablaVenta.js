@@ -33,7 +33,7 @@ export default class TablaVenta extends Component {
     super(props);
     this.deleteRecord = this.deleteRecord.bind(this);
       this.state = {
-      producto: "",
+      producto: "N",
       cantidad: "",
       precio: 0,
       precio_total: "",
@@ -117,7 +117,7 @@ export default class TablaVenta extends Component {
     e.preventDefault();
  
     // When post request is sent to the create url, axios will add a new record to the database.
-    const newproduct = {
+    const newventa = {
       producto: this.state.producto,
       cantidad: this.state.cantidad,
       precio: this.state.precio,
@@ -130,12 +130,12 @@ export default class TablaVenta extends Component {
     };
  
     axios
-      .post("http://localhost:5000/api/Ventas/", newproduct)
+      .post("http://localhost:5000/api/Ventas/", newventa)
       .then((res) => console.log(res.data));
  
     // We will empty the state after posting the data to the database
     this.setState({
-      producto: "",
+      producto: "N",
       cantidad: "",
       precio: 0,
       precio_total: 0,
@@ -258,7 +258,7 @@ export default class TablaVenta extends Component {
   }else if(accion==="informacion"){
     return (
       <div>
-        <h3>Record List</h3>
+        <h3>Lista de Ventas</h3>
         <table className="table table-striped" style={{ marginTop: 20 }}>
           <thead>
             <tr>

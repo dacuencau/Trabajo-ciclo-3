@@ -15,6 +15,14 @@ const Profile = () => {
         <img src={user.picture} alt={user.name} />
         <h2>{user.name}</h2>
         <p>{user.email}</p>
+    <p>Verificacion de nuevo enlace: 
+      <br/>
+    	<Link to="/administrador">Admin</Link>
+      <br/> 
+        <Link to="/vendedor">Vend</Link>
+      <br/>
+    	<Link to="/usuario">Usuario</Link>
+    </p><br/>
       </div>
     )
   );
