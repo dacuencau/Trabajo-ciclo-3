@@ -5,6 +5,7 @@ import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Login from './components/Login';
 import Admin from './components/Admin';
+import Vend from  './components/Vend';
 
 function App(){
   return(
@@ -16,6 +17,11 @@ function App(){
           "/adm-ventas-reg","/adm-ventas-inf",
           "/adm-producto-reg","/adm-producto-inf",
           "/adm-usuario-reg","/adm-usuario-inf"]} component={Admin}/>
+          
+          <Route exact path={["/"]} component={Login}/>
+          <Route exact path={["/vendedor",
+          "/adm-ventas-reg","/adm-ventas-inf",
+          "/adm-producto-reg","/adm-producto-inf"]} component={Vend}/>
         </Switch>
       </div>
     </BrowserRouter>
