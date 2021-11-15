@@ -14,10 +14,17 @@ const Login = ()=>{
   
   return(
   <section className="Home">
-    <h3>Hello Login </h3>
-    <p>Registro mediante Google - OAuth2</p>
-    { isAuthenticated ? <LogoutButton/> : <LoginButton/> }
-    <Profile/>
+    { isAuthenticated ? 
+    <div>
+      <LogoutButton/> 
+      <Profile/>
+    </div>
+    : 
+    <div>
+      <h3>Bienvenido </h3>
+      <p>Registro mediante Google - OAuth2</p>
+      <LoginButton/>
+    </div> }
   </section>
   );
 };

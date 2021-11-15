@@ -33,7 +33,7 @@ export default class TablaVenta extends Component {
     super(props);
     this.deleteRecord = this.deleteRecord.bind(this);
       this.state = {
-      producto: "N",
+      producto: "",
       cantidad: "",
       precio: 0,
       precio_total: "",
@@ -135,7 +135,7 @@ export default class TablaVenta extends Component {
  
     // We will empty the state after posting the data to the database
     this.setState({
-      producto: "N",
+      producto: "",
       cantidad: "",
       precio: 0,
       precio_total: 0,

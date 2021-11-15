@@ -17,9 +17,9 @@ const Profile = () => {
         <p>{user.email}</p>
     <p>Verificacion de nuevo enlace: 
       <br/>
-    	<Link to="/administrador">Admin</Link>
+    	<Link to="/administrador">Administrador</Link>
       <br/> 
-        <Link to="/vendedor">Vend</Link>
+        <Link to="/vendedor">Vendedor</Link>
       <br/>
     	<Link to="/usuario">Usuario</Link>
     </p><br/>
