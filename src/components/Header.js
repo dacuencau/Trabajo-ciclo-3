@@ -1,4 +1,5 @@
 import React from 'react';
+import LogoutButton from "./LogoutButton";
 import '../css/header.css';
 
 function Header(){
@@ -7,10 +8,10 @@ function Header(){
       <a href="#">Web-project</a>
       <nav className="Nav-header">
         <ul>
-          <li>Usuario</li>
+          <li>Usuario:</li>
           <li>Administrador</li>
           <li class="button">
-            <button type="submit">Cerrar sesión</button>
+            <LogoutButton/>
           </li>
         </ul>
       </nav>
