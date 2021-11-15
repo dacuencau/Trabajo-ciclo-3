@@ -8,15 +8,15 @@ import { Auth0Provider } from "@auth0/auth0-react";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
     <Auth0Provider
     domain="autopartes18.us.auth0.com"
     clientId="VvaTlEVcdFHHQdFVEanTgig7TYW6ONxV"
     redirectUri={window.location.origin}
     >
+    <BrowserRouter>
         <App />
-    </Auth0Provider>
     </BrowserRouter>
+    </Auth0Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
