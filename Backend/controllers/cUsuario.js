@@ -8,12 +8,12 @@ exports.getUsuarios = (req, res) => {
 
 exports.addUsuario = (req, res) => {
   const usuarioadd = new Usuarios({
-    documento: req.body.Documento,
-    nombreApellido: req.body.NombreApellido,
-    telefono: req.body.Telefono,
-    correo: req.body.Correo,
-    sucursal: req.body.Sucursal,
-    rol: req.body.Rol,
+    documento: req.body.documento,
+    nombreApellido: req.body.nombreApellido,
+    telefono: req.body.telefono,
+    correo: req.body.correo,
+    sucursal: req.body.sucursal,
+    rol: req.body.rol,
   });
 
   usuarioadd.save().then((createdUser) => {
