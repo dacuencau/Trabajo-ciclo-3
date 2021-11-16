@@ -6,6 +6,7 @@ import Login from './components/Login';
 import Admin from './components/Admin';
 import Usuario from './components/Usuario';
 import Vend from  './components/Vend';
+import EditVenta from './components/EditVenta';
 
 
 function App(){
@@ -13,7 +14,7 @@ function App(){
     <BrowserRouter>
       <div className="App">
         <Switch>
-          <Route exact path={["/"]} component={Login}/>
+          <Route exact path={["/","/profile"]} component={Login}/>
           <Route exact path={["/administrador",
             "/adm-ventas-reg","/adm-ventas-inf",
             "/adm-producto-reg","/adm-producto-inf",
@@ -22,7 +23,8 @@ function App(){
             "/usr-usuario-reg","/usr-usuario-inf"]} component={Usuario} />
           <Route exact path={["/vendedor",
             "/vnt-ventas-reg","/vnt-ventas-inf",
-            "/vnt-producto-reg","/vnt-producto-inf"]} component={Vend}/>
+            "/vnt-producto-reg","/vnt-producto-inf"]} component={Vend}/>        
+          <Route path="/edit/:id" component={EditVenta} />
         </Switch>
       </div>
     </BrowserRouter>
