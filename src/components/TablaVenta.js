@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from 'axios';
 import { Link } from "react-router-dom";
 import '../css/tablas.css';
+import '../css/forms.css';
 
 const Record = (props) => (
   <tr>
@@ -189,7 +190,7 @@ export default class TablaVenta extends Component {
   const accion = this.props.visual
   if(accion==="registro"){
     return(
-  	  <div>
+  	  <div className="register_venta">
         <form onSubmit={this.onSubmit}>
           <label>Producto <input type="text"
               value={this.state.producto}
