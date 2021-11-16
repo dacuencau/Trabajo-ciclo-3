@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from 'axios';
 import { Link } from "react-router-dom";
+import '../css/tablas.css';
 
 const Record = (props) => (
   <tr>
@@ -257,7 +258,7 @@ export default class TablaVenta extends Component {
     )
   }else if(accion==="informacion"){
     return (
-      <div>
+      <div className='Tabla-ventas'>
         <h3>Lista de Ventas</h3>
         <table className="table table-striped" style={{ marginTop: 20 }}>
           <thead>
