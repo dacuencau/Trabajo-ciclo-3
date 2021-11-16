@@ -5,10 +5,10 @@ import '../css/header.css';
 function Header(){
   return(
     <div className="Header-principal">
-      <a href="#">Web-project</a>
+      <a href="#">ZapatosWeb</a>
       <nav className="Nav-header">
         <ul>
-          <li>Usuario:</li>
+          <li>Usuario :</li>
           <li>Administrador</li>
           <li class="button">
             <LogoutButton/>

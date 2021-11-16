@@ -1,16 +1,17 @@
 import React from 'react';
 import '../css/header.css';
+import LogoutButton from "./LogoutButton";
 
 function HeaderV(){
   return(
     <div className="Header-principal">
-      <a href="#">Web-project</a>
+      <a href="#">ZapatosWeb</a>
       <nav className="Nav-header">
         <ul>
-          <li>Usuario:</li>
+          <li>Usuario :</li>
           <li>Vendedor</li>
           <li class="button">
-            <button type="submit">Cerrar sesión</button>
+            <LogoutButton/>
           </li>
         </ul>
       </nav>
