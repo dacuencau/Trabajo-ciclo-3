@@ -11,8 +11,8 @@ import { Auth0Provider } from "@auth0/auth0-react";
 ReactDOM.render(
   <React.StrictMode>
     <Auth0Provider
-    domain="dev-yqshildz.us.auth0.com"
-    clientId="YqrhzqgYdsrrXvbwikFRFNIBH0DOu4E1"
+    domain="autopartes18.us.auth0.com"
+    clientId="brRMPVrY5ksl2lmvPAWExRWUZRFrl9rc"
     redirectUri={window.location.origin }
     
     >
